@@ -1,3 +1,147 @@
-#page-content {
-    background-color: green;
+// navigation
+.navbar {
+    background-color: $light-cyan !important;
+}
+
+// Content 
+#page-content,
+#page-wrapper {
+    background-color: $light-cyan;
+}
+
+// Sidebar 
+#nav-drawer {
+    background-color: $white;
+}
+
+// .active {
+//     background-color: $purple !important;
+// }
+// button 
+.btn {
+    border-radius: 10px;
+}
+
+.btn:focus {
+    outline: none;
+    border-inline: none;
+}
+
+.cbtn-warning {
+    background-color: $orange;
+}
+
+.cbtn-warning:hover {
+    background-color: $dark-orange;
+}
+
+// utilities
+.cshadow {
+    box-shadow: 0 2px 5px rgb(128, 128, 128, 0.5);
+}
+
+// navigation
+.navbar {
+    box-shadow: none;
+}
+
+//dropdown
+.cdropdown-menu {
+    border-radius: 10px;
+    border: none;
+}
+
+.dropdown-item:hover {
+    background-color: $gray;
+    color: $dark-cyan;
+}
+
+// Course overview
+#inst28.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 5px rgb(128, 128, 128, 0.5);
+}
+
+// Recently accessed courses
+#inst27.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 5px rgb(128, 128, 128, 0.5);
+}
+
+// LOGIN FORM PAGE -----------------------------------------------------------------
+// location: templates/core/loginForm
+#region-main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card {
+        border-radius: 10px;
+        overflow: hidden;
+        .card-block {
+            .card-body {
+                padding: 0
+            }
+            .card-header {
+                background-color: $purple;
+                border: none;
+                color: white;
+            }
+        }
+    }
+}
+
+#side-color {
+    background-image: linear-gradient(to right top, #7000ff, #7000ff, #7000ff, #7000ff, #7000ff, #6e00f9, #6b00f4, #6900ee, #6400e2, #5e00d6, #5900ca, #5400be);
+    // margin: auto;
+    .side-content {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        h3 {
+            font-weight: bold;
+            color: white;
+        }
+        .sitename {
+            color: white;
+        }
+    }
+}
+
+#my-form {
+    .col-md-7 {
+        .card-body {
+            padding: 2rem 1rem 2rem 1rem;
+            .form-group .form-control {
+                border-radius: 10px;
+                border: none;
+                background-color: $gray;
+            }
+            .btn-primary {
+                background-color: $orange;
+                border: none;
+            }
+        }
+    }
+}
+
+// navbar form ---------------------------------------------------------------
+// location: template/core/navbar
+#my-breadcrumb {
+    .breadcrumb {
+        .breadcrumb-item {
+            &:last-child {
+                font-weight: bold;
+            }
+            a {
+                color: $dark-cyan !important;
+                &:hover {
+                    text-decoration: none;
+                    color: $orange;
+                }
+            }
+        }
+    }
 }
