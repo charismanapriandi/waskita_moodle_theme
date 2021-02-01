@@ -1,0 +1,66 @@
+#region-main {
+    border: none;
+    border-radius: 10px;
+    // box-shadow: $shadow;
+}
+
+#frontpage-available-course-list {
+    h2 {
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+    .courses {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        // overflow-x: auto;
+        .coursebox {
+            max-width: 300px;
+            min-width: 300px;
+            box-shadow: $shadow;
+            margin: 0 5px 5px 5px;
+            background-color: $gray;
+            .info {
+                .coursename {
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+            }
+            .content {
+                display: grid;
+                .summary {
+                    width: 100%;
+                    max-height: 200px;
+                    grid-row: 2;
+                    overflow-y: auto;
+                    &::-webkit-scrollbar {
+                        width: 5px;
+                    }
+                    &::-webkit-scrollbar-track {
+                        box-shadow: inset 0 0 5px grey;
+                        border-radius: 10px;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background: $purple;
+                        border-radius: 10px;
+                    }
+                    &::-webkit-scrollbar-thumb:hover {
+                        background: $orange;
+                    }
+                }
+                .courseimage {
+                    margin: 5px 0 0 0;
+                    width: 100%;
+                    grid-row: 1;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    img {
+                        min-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

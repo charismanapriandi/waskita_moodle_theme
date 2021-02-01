@@ -1,0 +1,37 @@
+#my_navbar {
+    .usernav {
+        display: flex;
+        align-items: center;
+    }
+    .dropdown-toggle::after {
+        content: none;
+    }
+    .navbar-nav {
+        .dropdown .nav-link {
+            padding-right: 0 !important;
+        }
+        .usermenu .menubar {
+            a {
+                display: flex !important;
+                align-items: center;
+            }
+            .action-menu-trigger .dropdown .userbutton {
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                color: $dark-cyan;
+                .usertext {
+                    margin-right: 0;
+                    &::before {
+                        content: "hallo,";
+                        font-size: 13px;
+                        display: block;
+                    }
+                }
+                .avatar {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}
