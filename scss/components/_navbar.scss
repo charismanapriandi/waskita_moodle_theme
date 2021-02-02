@@ -10,26 +10,38 @@
         .dropdown .nav-link {
             padding-right: 0 !important;
         }
-        .usermenu .menubar {
-            a {
-                display: flex !important;
-                align-items: center;
-            }
-            .action-menu-trigger .dropdown .userbutton {
-                display: flex;
-                align-items: center;
-                flex-direction: row-reverse;
-                color: $dark-cyan;
-                .usertext {
-                    margin-right: 0;
-                    &::before {
-                        content: "hallo,";
-                        font-size: 13px;
-                        display: block;
-                    }
+        .usermenu {
+            .login {
+                line-height: 2.25rem;
+                .my-login-button {
+                    background-color: $orange;
+                    padding: 0 20px;
+                    border-radius: 10px;
+                    box-shadow: $shadow;
+                    border: none;
                 }
-                .avatar {
-                    margin-right: 0.5rem;
+            }
+            .menubar {
+                a {
+                    display: flex !important;
+                    align-items: center;
+                }
+                .action-menu-trigger .dropdown .userbutton {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row-reverse;
+                    color: $dark-cyan;
+                    .usertext {
+                        margin-right: 0;
+                        &::before {
+                            content: "hallo,";
+                            font-size: 13px;
+                            display: block;
+                        }
+                    }
+                    .avatar {
+                        margin-right: 0.5rem;
+                    }
                 }
             }
         }

@@ -2,6 +2,7 @@
     box-shadow: 2px 0 5px rgb(128, 128, 128, 0.5);
 }
 
+// custom sidebar id 
 #sidebar {
     ul li .list-group-item {
         border: none;
@@ -11,6 +12,9 @@
         position: absolute;
         right: 10px;
         right: 10px;
+        .icon {
+            margin-right: 0;
+        }
     }
 }
 
@@ -22,7 +26,7 @@ $drawer-width: 285px !default;
 $drawer-padding-x: 20px !default;
 $drawer-padding-y: 20px !default;
 $drawer-offscreen-gutter: 20px !default;
-$drawer-icon: 70px;
+$drawer-icon: 60px;
 :target::before {
     content: " ";
     display: block;
