@@ -1,4 +1,8 @@
 #my_navbar {
+    -webkit-transition: margin-left 0.5s ease, left 0.5s ease;
+    -moz-transition: margin-left 0.5s ease, left 0.5s ease;
+    transition: margin-left 0.5s ease, left 0.5s ease;
+    margin-left: $drawer-icon;
     .usernav {
         display: flex;
         align-items: center;
@@ -46,4 +50,8 @@
             }
         }
     }
+}
+
+.my-drawer-open {
+    margin-left: $drawer-width !important;
 }
