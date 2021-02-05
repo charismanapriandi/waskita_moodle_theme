@@ -1,6 +1,8 @@
 #nav-drawer {
-    box-shadow: 2px 0 5px rgb(128, 128, 128, 0.5);
+    // box-shadow: 2px 0 5px rgb(128, 128, 128, 0.5);
     margin-top: 0 !important;
+    background-color: $purple;
+    color: white;
 }
 
 // custom sidebar id 
@@ -192,4 +194,9 @@ $right-drawer-width: 320px;
     [data-region=right-hand-drawer] {
         box-shadow: 2px 2px 4px rgba(0, 0, 0, .08);
     }
+}
+
+.drawer-close-icon {
+    position: absolute;
+    right: 10px;
 }
