@@ -1,23 +1,49 @@
 #nav-drawer {
     // box-shadow: 2px 0 5px rgb(128, 128, 128, 0.5);
     margin-top: 0 !important;
-    background-color: $purple;
+    background-color: #1F1550;
     color: white;
-}
-
-// custom sidebar id 
-#sidebar {
-    ul li .list-group-item {
-        border: none;
-        border-radius: 0 10px 10px 0;
+    ul li {
+        .active {
+            background-color: green;
+            &::before {
+                content: '';
+                position: absolute;
+                // z-index: 10;
+                top: 0;
+                bottom: 0;
+                right: 2px;
+                width: 5px;
+                background-color: $orange;
+                border-radius: 2px;
+                transition: width .5s ease-in-out;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background-color: rgba(255, 184, 0, .1);
+            }
+        }
+        .list-group-item {
+            border: none;
+            color: white;
+            background-color: #1F1550;
+            // border-radius: 0 10px 10px 0;
+        }
     }
     .my-btn-toggle {
         position: absolute;
         right: 10px;
-        right: 10px;
         .icon {
             margin-right: 0;
         }
+        // #sidebar-btn {
+        //     background-color: transparent;
+        // }
     }
 }
 
@@ -76,7 +102,7 @@ $drawer-bg: darken($body-bg, 5%) !default;
 
 @include media-breakpoint-up(sm) {
     [data-region="drawer"] {
-        padding: $drawer-padding-x 3px $drawer-padding-x 0;
+        padding: $drawer-padding-x 0 $drawer-padding-x 0;
     }
 }
 
@@ -199,4 +225,9 @@ $right-drawer-width: 320px;
 .drawer-close-icon {
     position: absolute;
     right: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.media-left {
+    transition: all .5s ease-in-out;
 }
