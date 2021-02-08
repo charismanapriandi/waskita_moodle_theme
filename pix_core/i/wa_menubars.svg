@@ -13,7 +13,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="menubars.svg">
+   sodipodi:docname="wa_menubars.svg">
   <style
      id="style833"></style>
   <defs
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="117.5025"
-     inkscape:cy="-9.5224359"
+     inkscape:zoom="11.313708"
+     inkscape:cx="23.261479"
+     inkscape:cy="4.68544"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -46,7 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -55,7 +55,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#000000;stroke-width:18.0734;stroke:none"
+       style="fill:#ffffff;stroke-width:18.0734;stroke:none"
        id="rect835"
        width="5.2914863"
        height="0.90284681"
@@ -65,7 +65,7 @@
        inkscape:export-xdpi="362.66699"
        inkscape:export-ydpi="362.66699" />
     <rect
-       style="fill:#000000;stroke-width:17.1161;stroke:none"
+       style="fill:#ffffff;stroke-width:17.1161;stroke:none"
        id="rect835-3"
        width="4.7457838"
        height="0.90284681"
@@ -75,7 +75,7 @@
        inkscape:export-xdpi="362.66699"
        inkscape:export-ydpi="362.66699" />
     <rect
-       style="fill:#000000;stroke-width:14.8143;stroke:none"
+       style="fill:#ffffff;stroke-width:14.8143;stroke:none"
        id="rect835-5"
        width="3.5551586"
        height="0.90284681"

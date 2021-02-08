@@ -6,23 +6,29 @@ const navigation = document.getElementById('my_navbar')
 const iconDrawer = document.querySelectorAll('.media-left')
 
 if (body.classList.contains('drawer-open-left')) {
+    for (let i = 0; i < iconDrawer.length; i++) {
+        iconDrawer[i].classList.remove('drawer-close-icon')
+    }
+    // navigation 
+    navigation.classList.add('my-drawer-open')
+} else {
     // icon 
     for (let i = 0; i < iconDrawer.length; i++) {
         iconDrawer[i].classList.add('drawer-close-icon')
     }
-    // navigation 
-    navigation.classList.add('my-drawer-open')
-} else if (body.classList.contains('')) {
     // navigation 
     navigation.classList.remove('my-drawer-open')
 }
 sidebarButton.addEventListener('click', (e) => {
     if (body.classList.contains('drawer-open-left')) {
         navigation.classList.remove('my-drawer-open')
-    } else {
-        // icon 
+            // icon 
         for (let i = 0; i < iconDrawer.length; i++) {
             iconDrawer[i].classList.add('drawer-close-icon')
+        }
+    } else {
+        for (let i = 0; i < iconDrawer.length; i++) {
+            iconDrawer[i].classList.remove('drawer-close-icon')
         }
         navigation.classList.add('my-drawer-open')
     }

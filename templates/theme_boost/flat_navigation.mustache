@@ -57,25 +57,19 @@
 }}
 <nav id="sidebar" class="list-group" aria-label="{{firstcollectionlabel}}">
     <div data-region="drawer-toggle" class="d-flex justify-content-center positio-relative">
-
-
-
+        {{! title  }}
         {{^logourl}}
             <p class="sitename text-center fw-bold">{{sitename}}</p>
         {{/logourl}}
         {{#logourl}}
             <p class="card-header text-center fw-bold" ><img src="{{logourl}}" class="img-fluid" title="{{sitename}}" alt="{{sitename}}"/></p>
         {{/logourl}}
-
+        {{! toggle button  }}
         <div  class="my-btn-toggle">
             <div data-region="drawer-toggle" class="d-inline-block">
-                <button id="sidebar-btn" aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn nav-link" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">{{#pix}}i/wa_menubars{{/pix}}<span class="sr-only">{{#str}}sidepanel, core{{/str}}</span></button>
+                <button id="sidebar-btn" aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">{{#pix}}i/wa_menubars{{/pix}}<span class="sr-only">{{#str}}sidepanel, core{{/str}}</span></button>
             </div>
-            {{! <button id="sidebar-btn" type="button" class="btn"></button> }}
         </div>
-
-
-
     </div>
     <ul class="mt-4">
         {{# flatnavigation }}
@@ -88,7 +82,7 @@
             {{#action}}
                 <li>
                     <a class="list-group-item list-group-item-action {{#isactive}}active{{/isactive}} {{#classes}}{{.}} {{/classes}}" href="{{{action}}}" data-key="{{key}}" data-isexpandable="{{isexpandable}}" data-indent="{{get_indent}}" data-showdivider="{{showdivider}}" data-type="{{type}}" data-nodetype="{{nodetype}}" data-collapse="{{collapse}}" data-forceopen="{{forceopen}}" data-isactive="{{isactive}}" data-hidden="{{hidden}}" data-preceedwithhr="{{preceedwithhr}}" {{#parent.key}}data-parent-key="{{.}}"{{/parent.key}}>
-                        <div class="ml-{{get_indent}} d-flex justify-content-center">
+                        <div class="ml-{{get_indent}} ">
                             <div class="media">
                                 {{#icon.pix}}
                                     <span class="media-left">
